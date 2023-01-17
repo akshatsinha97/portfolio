@@ -99,6 +99,11 @@ p, li{
     color: white;
     background-color: #7FDBCA;
     cursor: pointer;
+    transition: transform .2s;
+}
+
+.buttons button:hover{
+    transform: scale(1.07);
 }
 
 .devPic img{
@@ -129,9 +134,11 @@ p, li{
     padding: 5px;
     background-color: #7FDBCA;
     color: white;
+    transition: transform .2s;
 }
 .contactForm form div button:hover{
     cursor: pointer;
+    transform: scale(1.07);
 }
 
 .form-control{
