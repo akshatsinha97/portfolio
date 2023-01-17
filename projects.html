@@ -10,40 +10,39 @@
   <body>
     <div class="container">
       <div class="sidebar sidebarGo">
+        <a href="javascript:void(0)" class="cross" onclick="closeNav()">&times;</a>
         <nav>
           <ul>
             <li><a href="/">Home</li></a>
             <li><a href="/about.html">About</li></a>
-            <li><a href="/services.html">Services</li></a>
             <li><a href="/projects.html">Projects</li></a>
             <li><a href="/contact.html">Contact Me</li></a>
           </ul>
         </nav>
       </div>
       <div class="main">
-        <div class="hamburger">
-          <img src="/ham.png" alt="" class="ham" width="30px">
-          <img src="/cross.png" alt="" class="cross" width="23px">
-        </div>
-        <div class="infoContainer">
-          <div class="devInfo">
-            <div class="hello">Hi! I am</div>
-            <div class="name">Akshat Sinha</div>
-            <div class="about">
-              Web Developer, Backend developer, Programmer
-            </div>
-            <div class="moreAbout">
-              I am an aspiring developer interested in developing backend
-              services. Fast learner with good critical thinking ability.
-            </div>
-            <div class="buttons">
-              <button>Download CV</button>
-              <button>Contact Me</button>
-            </div>
+        <a href="javascript:void(0)" class="ham" onclick="openNav()">&#9776;</a>
+        <div class="content">
+          <h2 class="name">Experience/Projects/Certifications</h2>
+          <div class="moreAbout">
+          <ul>
+            <li>
+          Working as a Technical Support Engineer at CSS Corp for Riverbed project supporting products like Netprofiler, Flowtraq & 
+            AppResponse and highly motivated to make transition towards software development & engineering domain.</li> </br>
+            <li>
+          Completed 2-months intensive Python programming course by MIT, Massachusetts with mid-term & final assessment 
+            exams endorsed by Riverbed Technology. </li></br>
+            <li>
+          Certificates from LinkedIn learning platform: HTML Essentials, CSS Essentials, JavaScript Essentials, React.js Essentials, 
+            MySQL Essentials, Learning Java. </li></br>
+            <li>
+          Swiggy REST API(JavaScript, Node.js, Express.js, Prisma ORM, MySQL) Link: <a href="https://swiggy-food-delivery.onrender.com/">https://swiggy-food-delivery.onrender.com/</a> </li></br>
+          <li>
+          Notes Web Application ( Python, Django REST Framework, HTML, CSS, React.js ) </li></br>
+          <li>
+          In Shorts-News web application (React.js, NewsCatcher API, Material UI, Tailwind CSS) Link: <a href="https://inshorts-app.onrender.com/">https://inshorts-app.onrender.com/</a> </li></br>
+          </ul>
           </div>
-
-          <div class="devPic"><img src="devPic.png" alt="developer pic" /></div>
-        </div>
       </div>
     </div>
     <script src="/script.js"></script>

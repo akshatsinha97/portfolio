@@ -5,6 +5,16 @@
     margin: 0;
     border: 0;
 }
+body{
+    background-color: #011627;
+}
+
+h2, label, div{
+    color: #7FDBCA
+}
+p, li{
+    color: white;
+}
 
 .container{
     display: flex;
@@ -12,11 +22,11 @@
 
 .sidebar{
     position: absolute;
-    background-color: rgb(215, 215, 215);
+    background-color: #7FDBCA;
     font-family: 'Fira Sans', sans-serif;
     width: 300px;
     height: 100vh;
-    transition: transform 0.3s ease-in;
+    transition: 0.5s;
 }
 
 .sidebar nav ul{
@@ -32,13 +42,16 @@
     color: black;
 }
 
+.sidebar nav li a:hover{
+    color: #f1f1f1;
+}
+
 .main{
     /* background-color: blueviolet; */
     width: 100vw;
 }
 
 .infoContainer{
-    /* background-color:aquamarine; */
     height: 58vh;
     width: 80vw;
     margin: 120px 0;
@@ -62,42 +75,44 @@
     font-weight: bold;
     font-family: 'Fira Sans', sans-serif;
 }
-.about{
-    font-size: 30px;
-}
+
 .moreAbout{
     font-size: 15px;
     font-family: 'Fira Sans', sans-serif;
     margin-top: 20px;
 
 }
+.content{
+    margin: 120px 0;
+    padding: 0 50px;
+    justify-content: space-around;
+}
+
 .buttons{
     margin-top:35px;
 }
 .buttons button{
-    padding: 9px;
-    border-radius: 4px;
+    padding: 9px 30px;
     margin: 0 6px;
     font-size: 12px;
     font-weight: bold;
     color: white;
-    background-color: turquoise;
+    background-color: #7FDBCA;
     cursor: pointer;
-    outline: auto;
+}
 
-}
-.buttons button:hover{
-    color: turquoise;
-    background-color: white;
-}
 .devPic img{
     height:58vh;
+}
+
+.contactForm{
+    margin: 120px 50px;
+    padding: 0 50px;
 }
 
 .contactForm h2{
     font-family: 'Source Code Pro', monospace;
     text-align: center;
-    padding: 50px;
 }
 
 .contactForm form div{
@@ -112,6 +127,11 @@
 .contactForm form div button{
     width: 20vh;
     padding: 5px;
+    background-color: #7FDBCA;
+    color: white;
+}
+.contactForm form div button:hover{
+    cursor: pointer;
 }
 
 .form-control{
@@ -156,15 +176,24 @@ p{
     transform: translate(-443px, 0px);
     position: absolute; 
 }
-.hamburger{
+.ham{
     position: absolute;
     cursor: pointer;
     top: 10px;
     left: 10px;
+    font-size: 30px;
+    text-decoration: none;
+    color: turquoise;
 }
 
 .cross{
-    margin-left: 255px;
+    color: #f1f1f1;
+    font-size: 65px;
+    margin-left: 240px;
+    position: absolute;
+    cursor: pointer;
+    text-decoration: none;
+    left: 10px;
 }
 
 @media(max-width: 1368px){

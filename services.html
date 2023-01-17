@@ -10,6 +10,7 @@
   <body>
     <div class="container">
       <div class="sidebar sidebarGo">
+        <a href="javascript:void(0)" class="cross" onclick="closeNav()">&times;</a>
         <nav>
           <ul>
             <li><a href="/">Home</li></a>
@@ -21,10 +22,7 @@
         </nav>
       </div>
       <div class="main">
-        <div class="hamburger">
-          <img src="/ham.png" alt="" class="ham" width="30px">
-          <img src="/cross.png" alt="" class="cross" width="23px">
-        </div>
+        <img src="/ham.png" alt="" class="ham" onclick="openNav()" width="30px">
         <div class="infoContainer">
           <div class="devInfo">
             <div class="hello">Hi! I am</div>
